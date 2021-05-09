@@ -4,7 +4,7 @@ resource "aws_s3_bucket" "mcsbucket" {
 }
 
 resource "aws_dynamodb_table" "basic-dynamodb-table" {
-  name           = "MCSGameScores"
+  name           = "MyCloudSeriesGameScores"
   billing_mode   = "PROVISIONED"
   read_capacity  = 20
   write_capacity = 20
