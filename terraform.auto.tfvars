@@ -1,1 +1,1 @@
-s3_bucket_name="eweres3dumise"
+#s3_bucket_name="eweres3dumise"
