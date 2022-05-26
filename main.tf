@@ -1,6 +1,5 @@
 resource "aws_s3_bucket" "mcsbucket" {
    bucket   = "mycloudseriesbucket"
-   acl      = "public-read"
 }
 
 resource "aws_dynamodb_table" "basic-dynamodb-table" {
