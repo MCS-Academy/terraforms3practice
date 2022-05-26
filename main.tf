@@ -1,5 +1,6 @@
 resource "aws_s3_bucket" "mcsbucket" {
-   bucket   = "mycloudseriesbucket"
+   #bucket   = "mycloudseriesbucket"
+   bucket   = var.s3_bucket
 }
 
 resource "aws_dynamodb_table" "basic-dynamodb-table" {
@@ -25,10 +26,10 @@ resource "aws_dynamodb_table" "basic-dynamodb-table" {
     type = "N"
   }
 
-  ttl {
-    attribute_name = "TimeToExist"
-    enabled        = false
-  }
+  #ttl {
+  #  attribute_name = "TimeToExist"
+  #  enabled        = false
+  #}
 
   global_secondary_index {
     name               = "GameTitleIndex"
