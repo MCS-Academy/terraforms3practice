@@ -1,6 +1,7 @@
 resource "aws_s3_bucket" "mcsbucket" {
    #bucket   = "mycloudseriesbucket"
-   bucket   = var.s3_bucket_name
+   #bucket   = var.s3_bucket_name
+   bucket    = lookup(var.s3_bucket_name, local.workspace)
 }
 
 resource "aws_dynamodb_table" "basic-dynamodb-table" {
