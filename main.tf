@@ -1,3 +1,6 @@
+locals {
+  workspace = "development"
+}
 resource "aws_s3_bucket" "mcsbucket" {
    #bucket   = "mycloudseriesbucket"
    #bucket   = var.s3_bucket_name
